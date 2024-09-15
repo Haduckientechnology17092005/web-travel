@@ -283,6 +283,7 @@ body {
     cursor: pointer;
     color: blue;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -453,11 +454,11 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: start;
+        text-align: center;
         font-size: 18px;
     }
     img{
-        max-width: 350px;
+        max-width: 300px;
         width: auto;
         height: auto;
     }
