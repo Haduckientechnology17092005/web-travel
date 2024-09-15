@@ -1,0 +1,83 @@
+.whythefirst{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+.text-whythefirst, .text-whythefirst1{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+.image-whythefirst{
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+}
+.image-whythefirst-left{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 30px;
+}
+.content-whythefirst-right{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.detail-whythefirst1{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: start;
+}
+.read-more-destination{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 20px
+}
+.numbered-list {
+    list-style-type: none; /* Loại bỏ dấu chấm của danh sách không thứ tự */
+    counter-reset: list-counter; /* Khởi tạo bộ đếm */
+}
+#tour-1, #tour-2, #tour-3, #tour-4, #tour-5, #tour-6, #tour-7, #tour-8, #tour-9, #tour-10, #tour-111{
+    color: black;
+}
+#tour-1, #tour-2, #tour-3, #tour-4, #tour-5, #tour-6, #tour-7, #tour-8, #tour-9, #tour-10, #tour-111:hover{
+    cursor: pointer;
+    color: blue;
+}

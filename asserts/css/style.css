@@ -1,0 +1,202 @@
+body {
+    background-color: white;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    display: block;
+    overflow-x: hidden;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #008cff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.logo {
+    display: flex;
+    justify-self: start;
+    width: 20%;
+    height: auto;
+}
+#image-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#image-logo:hover {
+    cursor: pointer;
+}
+.menu {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.menu-item, .menu-item1 {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu-item1{
+    display: none;
+}
+.menu-item:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.horizontal {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: auto;
+    background-color: #008cff;
+    border-radius: 20px;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.horizontal-item {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.horizontal-item:hover {
+    background-color: white;
+    color: #0004ff;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    width: 100%;
+    position: relative;
+    animation: move 60s linear infinite;
+    margin-bottom: 30px;
+}
+.animated-image {
+    width: 60%;
+    height: auto;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-260%);
+    }
+}
+#toggle-animation {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #008cff;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+#toggle-animation:hover {
+    background-color: #005bb5;
+}
+#play-icon {
+    display: none;
+}
+#pause-icon {
+    display: inline;
+}
+#toggle-animation.paused #play-icon {
+    display: inline;
+}
+#toggle-animation.paused #pause-icon {
+    display: none;
+}
+.introduction {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.item-intro {
+    width: 400px;
+    height: 300px;
+    background-color: #00ccff;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    transition: 0.5s;
+}
+.item-intro:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.image-background {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
